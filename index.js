@@ -7,12 +7,14 @@ let message = "";
 let hasBlackJack = false;
 let isAlive = true;
 let firstCard = 10
-let secondCard = 10
+let secondCard = 4
 let sum = firstCard + secondCard;
 
 function newCard() {
 	console.log("Drawing new card from the deck.")
-	
+	let card = 7
+	sum += card
+	startGame()
 }
 
 function startGame() {
@@ -21,7 +23,7 @@ function startGame() {
 	if (sum <= 20) {
 		message = "Do you want to draw a new card?";
 	} else if (sum === 21) {
-		message = "Wohoo! You've got Blackjack!";
+		message = "You've got Blackjack!";
 		hasBlackJack = true;
 	} else {
 		message = "You're out of the game!";
@@ -29,6 +31,7 @@ function startGame() {
 	}
 
 	messageEl.textContent = message
+	console.log(sum)
 }
 
 

@@ -35,4 +35,9 @@ button {
 	border: none;
 }
 
-
+.game-btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
