@@ -2,13 +2,13 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
 
+// player object
 let player = {
 	name: "xamdp",
 	chips: 145
 }
 
-let playerEl = document.getElementById('player-el')
-
+let playerEl = document.getElementById('player-el') // player placeholder
 playerEl.textContent = player.name + ": $" + player.chips
 
 let message = "";
